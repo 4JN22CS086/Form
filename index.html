@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Pitch Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Custom PC Build Submission Form</h1>
+        <form id="pitchForm" method="POST" action="submit.php" enctype="multipart/form-data">
+
+            <label for="founderName"> Full Name:</label>
+            <input type="text" id="founderName" name="founderName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="country">State:</label>
+            <select class="country" id="country" name="country" required>
+                <option value="IN">Select a State</option>
+                <option value="India">Karnataka</option>
+                <option value="UK">New Delhi</option>
+                <option value="canada">Assam</option>
+                <option value="australia">Kerala</option>
+                <option value="Others">Tamil Nadu</option>
+            </select>
+
+            <label for="ship">Shipping Address:</label>
+            <input type="ship" id="ship" name="ship" required>
+
+            <label for="build">Build Purpose (e.g., gaming, workstation, general use, etc.):</label>
+            <input type="build" id="build" name="build" required>
+
+            <label for="process">Processor (CPU) :</label>
+            <textarea class="process" id="process" name="process" required></textarea>
+
+            <label for="gc">Graphic Card (GPU) :</label>
+            <textarea class="gc" id="gc" name="gc" required></textarea>
+
+            <label for="ram">RAM (capacity, speed, brand preferences):</label>
+            <textarea class="ram" id="ram" name="ram" required></textarea>
+
+            <label for="aes">Aesthetic Preferences :</label>
+            <textarea class="aes" id="aes" name="aes" required></textarea>
+
+            <label for="add">Addition Requirements:</label>
+            <textarea class="add" id="add" name="add" rows="5" required></textarea>
+
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
